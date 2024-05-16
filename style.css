@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  text-align: center;
+  background: linear-gradient(to right, #033965, #82eac4);
+}
+h1 {
+  height: 7vh;
+  color: rgb(209, 213, 219);
+text-shadow: 3px 1px 3px rgb(42, 65, 165);
+
+}
+.player{
+  font-size: 1.05rem;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+.game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /*wrap (next line) the items if less space in game's div*/
+  height: 60vmin;
+  width: 60vmin;
+  gap: 1.5vmin;
+}
+.btn {
+  height: 18vmin;
+  width: 18vmin;
+  border-radius: 1rem;
+  border: none;
+  background-color: #4b9d9442;
+  box-shadow: 20px 20px 60px #05050573, -20px -20px 60px #ffffff23;
+  transition: all 0.5s;
+  cursor: pointer;
+  font-size: 5rem;
+  color: rgb(255, 255, 255);
+ 
+}
+.btn:hover {
+  transform: perspective(20px);
+  transform: skew(10deg, -10deg);
+}
+
+
+
+
+#reset-btn {
+  height: 8vmin;
+  width: 16vmin;
+  border-radius: 1rem;
+  border: none;
+  font-weight: 600;
+  background: -webkit-linear-gradient(
+    -45deg,
+    #13e0c5 0%,
+    #014fad 50%,
+    #282fff 50%,
+    #8309e0 100%
+  );
+  cursor: pointer;
+  transition:transform 0.5s;
+  color: antiquewhite;
+}
+#reset-btn:hover {
+  transform: skew(-10deg,10deg);
+}
+
+#reset-btn:active {
+  /* box-shadow: 0 7px #265d50; */
+  transform: translateY(4px);
+}
+
+#new-btn {
+  height: 8vmin;
+  width: 16vmin;
+  border-radius: 1rem;
+  border: none;
+  font-weight: 600;
+  background: -webkit-linear-gradient(
+    -45deg,
+   
+    #282fff 0%,
+    #8309e0 50%,
+    #13e0c5 100%,
+    #014fad 50%
+  );
+  cursor: pointer;
+  transition:transform 0.5s;
+  color: antiquewhite;
+  transition: transform 0.5s;
+}
+#new-btn:hover{
+  transform: perspective(150px);
+  transform: skew(10deg,-10deg);  
+ 
+}
+#new-btn:active{
+  transform: translateY(4px);
+}
+
+
+#message {
+  color: antiquewhite;
+  font-size: 2rem;
+}
+
+.hide-container {
+  display: none;
+}
+
+img{
+  height: 20px;
+  width: 30px;
+}
